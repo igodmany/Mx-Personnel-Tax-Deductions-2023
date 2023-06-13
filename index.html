@@ -1,51 +1,266 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Obtener saldo a favor SAT</title>
+    <title>Mi página web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Estilos CSS aquí */
+
+
+
+        /* Estilos para la sección Biografía */
+        #biografia {
+            text-align: center;
+            background-color: #A3E4D7; /* Color de fondo deseado */
+            margin: 0;
+            padding: 20px;
+        }
+        #biografia p {
+            text-align: center;
+            text-align: justify;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+
+
+        /* Estilos para la sección Acerca, proyectos, habilidades, contacto*/
+        #acerca {
+            text-align: center;
+            background-color: #A3E4D7; /* Color de fondo deseado */
+            margin: 0;
+            padding: 20px;
+        }
+        #proyectos {
+            text-align: center;
+            background-color: #A3E4D7; /* Color de fondo deseado */
+            margin: 0;
+            padding: 20px;
+        }
+        #proyectos p {
+            text-align: justify;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        #habilidades {
+            text-align: center;
+            background-color: #A3E4D7; /* Color de fondo deseado */
+            margin: 0;
+            padding: 20px;
+        }
+        #contacto {
+            text-align: center;
+            background-color: #A3E4D7; /* Color de fondo deseado */
+            margin: 0;
+            padding: 20px;
+
+        }
+
+
+
+        /* Estilo para quitar las viñetas de la lista */
+        #proyectos ul {
+            list-style: none;
+            padding: 0;
+        }
+        #habilidades ul {
+            list-style: none;
+            padding: 0;
+        }
+        #contacto ul {
+            list-style: none;
+            padding: 0;
+        }
+
+
+
+        /*Estilos para la sección de Encabezado*/
+        .header {
+            text-align: center;
+            background-color: #1F2C4A; /* Color de fondo del encabezado */
+        }
+
+        .header {
+             position: relative;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            text-align: center;
+        }
+
+        .header-title {
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .header-nav {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .header-item {
+            margin: 0 10px;
+            background: rgba(255, 255, 255, 0.5); /* Color de fondo transparente */
+            padding: 10px; /* Ajusta el espaciado interno del cuadro */
+
+        }
+
+        .header-link {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .header-link:hover {
+            color: #ff0000;
+        }
+
+        .header img {
+            width: 100%;
+            height: auto;
+        }
+
+        .header {
+            position: relative;
+        }
+
+        .header h1 {
+            position: absolute;
+            top: 50px; /* Ajusta la posición vertical según tus necesidades */
+            left: 50%; /* Ajusta la posición horizontal según tus necesidades */
+            transform: translateX(-50%); /* Centra el texto horizontalmente */
+            z-index: 2; /* Asegura que el texto esté por encima de la imagen */
+            color:  #fdfcfc; /* Color del texto */
+            text-shadow: 2px 2px 4px #14e40d; /* Contorno de color del texto */
+        }
+
+
+        /*Iconos flotantes de redes sociales*/
+        .social-link .fab {
+            font-size: 24px;
+            color: #ffffff;
+            margin-right: 10px;
+        }
+
+
+
+        /*Estilos para la seccion de Derechos de Autor*/
+        .copyright {
+            background-color: #1F2C4A;
+            padding: 10px;
+            text-align: center;
+            color: #F2F2F2;
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>Conoce la lista de deduccciones personaes para que el SAT te devuleva dinero</h1>
-  </header>
-  
-  <nav>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Acerca de</a></li>
-      <li><a href="#">Productos</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </nav>
-  
-  <main>
-    <section>
-      <h2>Acerca de</h2>
-      <p>Texto descriptivo sobre tu página web.</p>
+
+<body>   
+    <header class="header">
+      <img src="https://media.licdn.com/dms/image/C4E16AQFYJvIg_bGptQ/profile-displaybackgroundimage-shrink_200_800/0/1647967608734?e=2147483647&v=beta&t=c1Nx4MZT6ycRZykgClVAZSVqcmUjeIf7n0etkVdn1L0" alt="Imagen de encabezado">
+      <h1 style="text-align: center;"><strong>Marco Carrera</strong></h1>
+      <div class="header-content">
+      <ul class="header-nav">
+        <li class="header-item">
+          <a class="header-link" href="#inicio"><strong>Inicio</strong></a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#acerca"><strong>Acerca de</strong></a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#proyectos"><strong>Proyectos</strong></a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#contacto"><strong>Contacto</strong></a>
+        </li>
+      </ul>  
+      </div>    
+    </header>
+
+
+    <section id="biografia">
+      <h2>Biografía</h2>
+      <!-- Contenido de la sección Biografía -->
+      <p>Soy un desarrollador web apasionado por la creación de sitios web atractivos y funcionales. Me gradué del INTITUTO TENOLÓGICO DE TEHUACÁN de ingeniería Industrial y he estado trabajando en proyectos de desarrollo web durante los últimos meses. Mi experiencia incluye el uso de lenguajes de programación como HTML, CSS, JavaScript, Python y herramientas de desarrollo web. Estoy comprometido con la mejora continua y siempre estoy buscando aprender nuevas tecnologías con platzi y técnicas para mejorar mis habilidades. Mi objetivo es crear soluciones web innovadoras que brinden una gran experiencia de usuario.</p>
     </section>
-    
-    <section>
-      <h2>Productos</h2>
+
+    <section id="acerca">
+      <h2>Acerca de</h2>
+      <!-- Contenido de la sección Acerca de -->
+      <p><strong>¿Quiénes Somos?</strong></p>
+      <p>SOMOS UN EQUIPO DE NIVEL BÁSICO EN LA RAMA DEL DESARROLLO WEB Y PROGRAMACIÓN</p>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <!-- Contenido de la sección Proyectos -->
       <ul>
-        <li>Producto 1</li>
-        <li>Producto 2</li>
-        <li>Producto 3</li>
+          <li>
+              <a href="https://replit.com/@marcocarrera/Python-MC#main.py">
+                  <h3>Proyecto 1</h3>
+              </a>
+              <p>El juego de Piedra, Papel o Tijeras es un juego clásico y popular en el que el jugador y la computadora eligen entre tres opciones: piedra, papel o tijeras. Cada opción tiene una relación de victoria y derrota con las otras dos opciones.</p>
+          </li>
+          <li>
+              <a href="https://replit.com/@marcocarrera/CalculadoraPython#main.py">
+                  <h3>Proyecto 2</h3>
+              </a>
+              <p></p>
+          </li>
+          <!-- Agrega más proyectos -->
+      </ul>  
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <!-- Contenido de la sección Habilidades -->
+      <ul>
+          <li>HTMLS</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>PYTHON | Básico </li>
+          <li>FUNDAMENTOS DE PROGRAMACIÓN Y DESARROLLO WEB | Intermedio </li>
+          <li>PHP</li>
       </ul>
     </section>
-    
-    <section>
-      <h2>Contacto</h2>
-      <form>
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
-        <input type="submit" value="Enviar">
-      </form>
-    </section>
-  </main>
   
-  <footer>
-    <p>Derechos de autor &copy; 2023 Mi página web</p>
-  </footer>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <!-- Contenido de la sección Contacto -->
+      <ul> 
+            <li><i class="fas fa-envelope"></i> Correo electrónico: marcocarrerarivera98@gmail.com</li>
+            <li><i class="fas fa-phone"></i> Teléfono: 236-122-9982</li>
+            <li><i class="fas fa-map-marker-alt"></i> Dirección: Tehuacan, Puebla</li>
+     </ul>
+    </section>
+
+
+
+    <section class="copyright">
+      <p>&copy; MARCO CARRERA | DERECHOS RESERVADOS 2023</p>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com/marco.carrera.90226" class="social-link">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="social-link">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="social-link">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <!-- Agrega aquí más enlaces a tus redes sociales -->
+      </div>
+    </section>
 </body>
+
 </html>
